@@ -1,0 +1,345 @@
+@import url('clash-display.css');
+
+h1{
+    font-family: 'ClashDisplay-Medium';
+}
+
+p { 
+    font-family: 'ClashDisplay-Light';
+}
+
+ul {
+    list-style: none;
+}
+
+
+#introduction, #projects, #about-me {
+    background-color: #F5F5F5;
+    min-height: 100vh;
+    position: relative; 
+}
+
+#about-me {
+    background-color: #F5F5F5;
+    min-height: 95vh;
+    position: relative;
+}
+
+#footer {
+    background-color: #30475E;
+    min-height: 50vh;
+    position: relative;
+}
+
+.brand {
+    font-size: 69px;
+    font-family: 'ClashDisplay-Bold';
+    color: #121212;
+    padding-left: 140px;
+}
+
+.content {
+    font-size: 2rem;
+    font-family: 'ClashDisplay-Regular';
+    color: #121212;
+    padding-right: 140px;
+}
+
+.content-item {
+    font-size: 1.25rem;
+    font-family: 'ClashDisplay-Regular';
+    color: #121212;
+    padding-left: 1.5rem;
+    text-decoration: none;
+}
+
+.containers {
+    align-items: center;
+    padding: 0 8.75rem;
+}
+
+.container-project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 8.75rem;
+}
+
+.container-up {
+    display: inline-block;
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.container-contents {
+    float: right;
+    width: 1024px;
+}
+
+.intro {
+    font-size: 4.5rem;
+    font-family: 'ClashDisplay-SemiBold';
+    text-align: right;
+    color: #121212;
+}
+
+.div-box {
+    overflow: hidden;
+    align-items: flex-end;
+}
+
+.img-me {
+    float: right;
+    position: relative;
+    overflow: visible;
+    width: 70%;
+    height: 36vh;
+    background-image: url("../img/20220616_001722.jpg");
+    background-position: 50% 0px;
+    background-size: cover;
+}
+
+.desc > p {
+    font-size: 2rem;
+    font-family: 'ClashDisplay-Light';
+    text-align: right;
+    color: #121212;
+    width: 100%;
+
+}
+
+.contact {
+    float: right;
+}
+
+ul.icons {
+    cursor: default;
+    list-style: none;
+    padding-left: 0;
+}
+
+ul.icons li {
+    display: inline-block;
+    height: 2.5em;
+    line-height: 2.5em;
+    padding-left: 1.5em;
+}
+
+ul.icons li .icon {
+    height: 3rem;
+}
+
+.next-section {
+    bottom: 0;
+    position: absolute;
+    left: 50%;
+    height: 4em;
+}
+
+.arrow-down {
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+.section-directions {
+    bottom: 0;
+    position: absolute;
+    height: 4em;
+}
+
+.arrow-up {
+    -webkit-transform: rotate(315deg);
+    -moz-transform: rotate(315deg);
+    -o-transform: rotate(315deg);
+    -ms-transform: rotate(315deg);
+    transform: rotate(315deg);
+}
+
+.arrows {
+    margin: 0 0.25rem;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+}
+
+.project {
+    font-family: 'ClashDisplay-SemiBold';
+    font-size: 4rem;
+    margin-top: 1rem;
+    position: absolute; 
+    text-align: center;
+}
+
+.project-img {
+    margin-top: 1.5rem;
+}
+
+.carousel {
+    width:800px;
+    height:450px;
+}
+
+.carousel-control-prev {
+    margin-left: -90px;
+}
+
+.carousel-control-next {
+    margin-right: -90px;
+}
+
+.carousel-inner { 
+    padding-bottom:95px; 
+}
+
+.carousel-caption {
+    font-family: 'ClashDisplay-Medium';
+    bottom: -80px;
+}
+
+.about-container {
+    justify-content: center;
+    padding: 0 8.75rem;
+}
+
+.about-title {
+    padding: 2rem 0rem;
+    text-align: center;
+}
+
+.about-title p {
+    margin-bottom: -0.5rem;
+    font-family: 'ClashDisplay-Regular';
+    font-size: 4rem;
+}
+
+.about-desc p {
+    text-align: center;
+    font-family: 'ClashDisplay-Light';
+    font-size: 1.5rem;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about-column {
+    float: left;
+    width: 33.33%;
+}
+
+.left-column {
+    text-align: right;
+}
+
+.center-column {
+    text-align: center;
+}
+
+.center-column a {
+    margin-top: 10px;
+}
+
+.right-column {
+    text-align: left;
+}
+
+.about-content-left > p, .about-content-right > p {
+    font-family: 'ClashDisplay-Regular';
+    font-size: 1.5rem;
+    margin-bottom: 0rem;
+}
+
+.content-desc {
+    font-size: 1.25rem;
+    font-style: italic;
+}
+
+.pfp-me {
+    position: absolute;
+    overflow: visible;
+    width: 25%;
+    height: 270px;
+    background-image: url("../img/profile-pic-web.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+footer {
+    text-align: center;
+    color: #F5F5F5;
+}
+
+.footer-container {
+    width: 100%;
+    height: 50vh;
+    display: table;
+    text-align: center;
+}
+
+.footer-row {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.footer-row h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+
+.footer-row p {
+    font-family: 'ClashDisplay-Regular';
+    font-size: 2rem;
+}
+
+ul.footer-icons {
+    cursor: default;
+    list-style: none;
+    padding-left: 0;
+}
+
+ul.footer-icons li {
+    display: inline-block;
+    height: 2.5em;
+    line-height: 2.5em;
+    padding-left: 1.5em;
+}
+
+ul.footer-icons li .icon {
+    color: #F5F5F5;
+    filter: invert(1);
+    height: 3rem;
+}
+
+ul.footer-icons li .icon-git {
+    height: 3rem;
+}
+
+.copyright p{
+    margin-bottom: 0;
+}
+
+
+.footer-desc {
+    color: #F5F5F5;
+    font-size: 4rem;
+    position: absolute;
+    margin-bottom: 20px;
+}
+
+
+.footer-line {
+    width: 42.5rem;
+    height: 4rem;
+    border-bottom: 3px solid #F5F5F5;
+    position: absolute;
+}
+
+
