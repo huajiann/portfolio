@@ -1,5 +1,9 @@
 @import url('clash-display.css');
 
+* {
+    box-sizing: border-box;
+  }
+
 h1{
     font-family: 'ClashDisplay-Medium';
 }
@@ -357,16 +361,17 @@ ul.footer-icons li .icon-git {
 
 @media only screen and (max-width: 992px) {
 
-    body {
-        width: 100%;
+    .nav-item {
+        text-align: center;
     }
 
-    .container-fluid .containers{
+    .container-fluid, .containers{
+        margin: 0;
         padding: 0 5vh;
     }
 
     .brand {
-        font-size: 5vh;
+        font-size: 8vw;
         font-family: 'ClashDisplay-Bold';
         color: #121212;
     }
@@ -374,5 +379,29 @@ ul.footer-icons li .icon-git {
     .img-me {
         width: 100%;
     }
+
+    .desc > p {
+        font-size: 3.5vw;
+        text-align: center;
+    }
+
+    .intro, .contact {
+        text-align: center;
+        float: none;
+    }
+
+    .intro {
+        font-size: 7vw;
+    }
+
+    ul.icons li {
+        padding: 0 0.625em;
+    }
+
 }
 
+@media only screen and (max-width: 500px){
+    .desc {
+        display: none;
+    }
+}
