@@ -4,7 +4,7 @@ h1{
     font-family: 'ClashDisplay-Medium';
 }
 
-p { 
+p {
     font-family: 'ClashDisplay-Light';
 }
 
@@ -12,11 +12,14 @@ ul {
     list-style: none;
 }
 
-
-#introduction, #projects, #about-me {
+body {
     background-color: #F5F5F5;
+    position: relative;
+}
+
+
+#introduction, #projects {
     min-height: 100vh;
-    position: relative; 
 }
 
 #about-me {
@@ -31,18 +34,24 @@ ul {
     position: relative;
 }
 
+.container-fluid {
+    margin: 0 15vh;
+}
+
 .brand {
     font-size: 69px;
     font-family: 'ClashDisplay-Bold';
     color: #121212;
-    padding-left: 140px;
+}
+
+.brand:hover {
+    color: #121212;
 }
 
 .content {
     font-size: 2rem;
     font-family: 'ClashDisplay-Regular';
     color: #121212;
-    padding-right: 140px;
 }
 
 .content-item {
@@ -53,10 +62,16 @@ ul {
     text-decoration: none;
 }
 
+.content-item:hover{
+    text-decoration: underline;
+    color: #121212;
+}
+
 .containers {
     align-items: center;
-    padding: 0 8.75rem;
+    padding: 0 15vh;
 }
+
 
 .container-project {
     display: flex;
@@ -73,7 +88,6 @@ ul {
 
 .container-contents {
     float: right;
-    width: 1024px;
 }
 
 .intro {
@@ -92,8 +106,8 @@ ul {
     float: right;
     position: relative;
     overflow: visible;
-    width: 70%;
-    height: 36vh;
+    width: 65%;
+    height: 38vh;
     background-image: url("../img/20220616_001722.jpg");
     background-position: 50% 0px;
     background-size: cover;
@@ -104,8 +118,6 @@ ul {
     font-family: 'ClashDisplay-Light';
     text-align: right;
     color: #121212;
-    width: 100%;
-
 }
 
 .contact {
@@ -171,7 +183,7 @@ ul.icons li .icon {
     font-family: 'ClashDisplay-SemiBold';
     font-size: 4rem;
     margin-top: 1rem;
-    position: absolute; 
+    position: absolute;
     text-align: center;
 }
 
@@ -192,8 +204,8 @@ ul.icons li .icon {
     margin-right: -90px;
 }
 
-.carousel-inner { 
-    padding-bottom:95px; 
+.carousel-inner {
+    padding-bottom:95px;
 }
 
 .carousel-caption {
@@ -342,4 +354,25 @@ ul.footer-icons li .icon-git {
     position: absolute;
 }
 
+
+@media only screen and (max-width: 992px) {
+
+    body {
+        width: 100%;
+    }
+
+    .container-fluid .containers{
+        padding: 0 5vh;
+    }
+
+    .brand {
+        font-size: 5vh;
+        font-family: 'ClashDisplay-Bold';
+        color: #121212;
+    }
+
+    .img-me {
+        width: 100%;
+    }
+}
 
