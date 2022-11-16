@@ -24,6 +24,7 @@ body {
 
 #introduction, #projects {
     min-height: 100vh;
+    position: relative;
 }
 
 #about-me {
@@ -117,11 +118,19 @@ body {
     background-size: cover;
 }
 
+.desc {
+    margin: 8px 0;
+}
+
 .desc > p {
     font-size: 2rem;
     font-family: 'ClashDisplay-Light';
     text-align: right;
     color: #121212;
+}
+
+.desc-mobile {
+    display: none;
 }
 
 .contact {
@@ -150,6 +159,7 @@ ul.icons li .icon {
     position: absolute;
     left: 50%;
     height: 4em;
+    transform:translate(-50%,0)
 }
 
 .arrow-down {
@@ -365,9 +375,14 @@ ul.footer-icons li .icon-git {
         text-align: center;
     }
 
+
     .container-fluid, .containers{
         margin: 0;
         padding: 0 5vh;
+    }
+
+    .container-contents {
+        float: none;
     }
 
     .brand {
@@ -391,7 +406,7 @@ ul.footer-icons li .icon-git {
     }
 
     .intro {
-        font-size: 7vw;
+        font-size: 4rem;
     }
 
     ul.icons li {
@@ -401,7 +416,34 @@ ul.footer-icons li .icon-git {
 }
 
 @media only screen and (max-width: 500px){
+
+    .container-fluid, .containers{
+        margin: 0;
+        padding: 0 1vh;
+    }
+
+    .intro {
+        font-size: 2.24rem;
+    }
+
     .desc {
         display: none;
     }
+
+    .desc-mobile {
+        display: block;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .desc-mobile > ul {
+        display: block;
+        padding-top: 1rem;
+        padding-left: 0;
+    }
+
+    .contact {
+        padding-top: 24px;
+    }
+
 }
